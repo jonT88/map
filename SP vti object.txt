@@ -1,0 +1,20 @@
+
+
+http://intranet.afservice.org/os/kpi/_vti_bin/owssvr.dll?XMLDATA=2&List={987629F0-0E13-4F65-8CC4-E99BADCCC1E6}
+
+http://intranet.afservice.org/os/kpi/_vti_bin/owssvr.dll?Cmd=Display&List={987629F0-0E13-4F65-8CC4-E99BADCCC1E6}&Query=*&XMLDATA=TRUE
+
+
+http://intranet.afservice.org/os/kpi/_vti_bin/owssvr.dll?Cmd=Display&List={987629F0-0E13-4F65-8CC4-E99BADCCC1E6}&XMLDATA=TRUE&FilterField1=Title&FilterValue1=Angeles, Brian
+
+
+http://intranet.afservice.org/os/kpi/_vti_bin/owssvr.dll?Cmd=Display&List={987629F0-0E13-4F65-8CC4-E99BADCCC1E6}&XMLDATA=TRUE&FilterField1=Title&FilterValue1=Angeles, Brian
+
+
+
+
+using List view
+
+
+
+http://intranet.afservice.org/os/kpi/_vti_bin/owssvr.dll?Cmd=Display&List={**list id**}&View={**list view**}&XMLDATA=TRUE
