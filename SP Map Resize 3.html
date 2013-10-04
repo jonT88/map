@@ -1,0 +1,796 @@
+<html lang="en">
+	<head>
+		<!-- Link to jMapping plugin -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+		
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.5&sensor=false"></script>
+		<script type="text/javascript" src="http://vigetlabs.github.io/jmapping/examples/js/markermanager.js"></script>
+		<script type="text/javascript" src="http://vigetlabs.github.io/jmapping/examples/js/StyledMarker.js"></script>
+		<script type="text/javascript" src="http://vigetlabs.github.io/jmapping/examples/js/jquery.metadata.js"></script>
+		<script type="text/javascript" src="http://intranet.afservice.org/os/kpi/Documents/jquery.jmapping.js"></script>
+
+	</head>
+	
+	
+	<body>
+
+	<div id="container">
+    
+		<div id="map" style="position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0); width: 100%; height: 100%; position: relative; float: left;">
+		</div>
+		
+		
+		
+		<div id="map-side-bar" style="position: relative; float: right;">
+		  <div class="map-location" data-jmapping="{id: 1, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 1, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 1, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 11, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 12, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 15, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 21, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 22, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 25, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 31, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 32, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 35, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 41, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 42, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 45, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 51, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 52, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 55, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 61, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 62, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 65, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		
+		<div id="map-side-bar" style="position: relative; float: right;">
+		  <div class="map-location" data-jmapping="{id: 71, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 72, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 75, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 81, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 82, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 85, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 91, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 92, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 95, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 991, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 992, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 995, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 881, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 882, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 885, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 771, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 772, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 775, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 661, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 662, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 665, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		
+		<div id="map-side-bar" style="position: relative; float: right;">
+		  <div class="map-location" data-jmapping="{id: 441, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 442, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 445, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 331, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 332, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 335, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 221, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 222, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 225, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 111, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 112, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 115, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 112, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 211, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 511, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	<div id="map-side-bar" style="position: relative; float: right;">
+		  <div class="map-location" data-jmapping="{id: 1, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 1, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 1, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 11, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 12, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 15, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 21, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 22, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 25, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 31, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 32, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 35, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 41, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 42, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 45, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 51, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 52, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 55, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 61, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 62, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 65, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		
+		<div id="map-side-bar" style="position: relative; float: right;">
+		  <div class="map-location" data-jmapping="{id: 71, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 72, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 75, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 81, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 82, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 85, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 91, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 92, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 95, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 991, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 992, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 995, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 881, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 882, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 885, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 771, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 772, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 775, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 661, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 662, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 665, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		
+		<div id="map-side-bar" style="position: relative; float: right;">
+		  <div class="map-location" data-jmapping="{id: 441, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 442, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 445, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 331, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 332, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 335, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 221, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 222, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 225, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 111, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 112, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 115, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>
+
+		  <div class="map-location" data-jmapping="{id: 112, point: {lng: 121.0792172, lat: 14.5637053}, category: 'market'}">
+			<a href="#" class="map-link">Berkeley Bowl</a>
+			<div class="info-box" style="display: none;">
+			  <p>A great place to get all your groceries, especially fresh fruits and vegetables.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 211, point: {lng: 121.132004, lat: 14.56681}, category: 'restaurant'}">
+			<a href="#" class="map-link">Nopalito</a>
+			<div class="info-box" style="display: none;">
+			  <p>The best authentic Mexican restaurant in San Francisco.</p>
+			</div>
+		  </div>
+		  <div class="map-location" data-jmapping="{id: 511, point: {lng: 121.0134406, lat: 14.4688677}, category: 'museum'}">
+			<a href="#" class="map-link">Exploratorium</a>
+			<div class="info-box" style="display: none;">
+			  <p>A hands-on museum of science, art, and human perception in San Francisco.</p>
+			</div>
+		  </div>		  
+		  
+		  
+		  
+		  
+		</div>
+		
+	</div>
+    
+	<script type="text/javascript">
+	  $(document).ready(function(){
+		$('#map').jMapping();
+	  });
+	</script>   	
+	
+
+	</body>
+</html>
+
+
+
+
+
+
